@@ -1,2 +1,2 @@
-class PortafoliosController < ApplicationController
+class PortfoliosController < ApplicationController
 end
