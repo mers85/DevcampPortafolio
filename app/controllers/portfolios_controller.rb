@@ -4,6 +4,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def vuejs
+    @vuejs_portfolio_items = Portfolio.vuejs
+  end
+
   def show
     @portfolio_item = Portfolio.find(params[:id])
   end
