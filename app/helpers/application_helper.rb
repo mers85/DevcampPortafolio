@@ -16,4 +16,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    GaspachoViewTool::Renderer.copyright 'Gaspacho', 'All rights reserved'
+  end
 end
