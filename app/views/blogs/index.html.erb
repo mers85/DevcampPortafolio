@@ -5,10 +5,7 @@
     </h3>
     <%= link_to 'Write a New Blog', new_blog_path, class: 'mx-2' if logged_in?(:site_admin) %>
   </div>
+    <%= paginate @blogs %>
     <%= render @blogs %>
-
-  <nav class="blog-pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-  </nav>
+    <%= paginate @blogs %>
 </div>
