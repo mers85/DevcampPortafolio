@@ -13,17 +13,10 @@
   </head>
 
   <body>
-    <!-- Start of navigation -->
+
       <%= render 'shared/portfolio_nav'%>
-    <!-- End of navigation -->
-
-
-
     <main role="main">
-      <!-- Start of masthead -->
-      <%= render 'shared/portfolio_masthead'%>
-      <!-- End of masthead -->
-
+      <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin)%>
 
       <%= yield %>
 
