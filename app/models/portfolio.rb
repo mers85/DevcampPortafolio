@@ -10,7 +10,7 @@ class Portfolio < ApplicationRecord
     where(subtitle: 'Vue.js')
   end
 
-  def by_position
+  def self.by_position
     order("position ASC")
   end
 
